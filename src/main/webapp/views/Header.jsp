@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">INICIO</a>
+            <a class="nav-link" href="/Sprint_Modulo/views/Inicio.jsp">INICIO</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Clientes</a>
@@ -25,10 +25,13 @@
             <a class="nav-link" href="#">Profesionales</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Sprint_Modulo/views/CreateCapacitation.jsp">Capacitaciones</a>
+            <a class="nav-link" href="/Sprint_Modulo/views/CapacitationList.jsp">Capacitaciones</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/Sprint_Modulo/views/Contact.jsp">/Contactanos/</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/Sprint_Modulo/views/Login.jsp">/Login/</a>
           </li>
         </ul>
       </div>

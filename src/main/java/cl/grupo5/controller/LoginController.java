@@ -8,17 +8,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/")
-public class InitController extends HttpServlet {
+@WebServlet("/Login")
+public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 
-    public InitController() {
+    public LoginController() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		getServletContext().getRequestDispatcher("/views/Inicio.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/views/Login.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
