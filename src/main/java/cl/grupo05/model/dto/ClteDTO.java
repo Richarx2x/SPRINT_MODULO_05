@@ -12,7 +12,7 @@ public class ClteDTO extends UserDTO {
 
   public ClteDTO (){
   }
-  public ClteDTO(String rut, String apellido,String correo,String telefono, String afp,String direccion, String comuna){
+  public ClteDTO(int id, String nombre, String username, String password, String rut, String apellido,String correo,String telefono, String afp,String direccion, String comuna){
     super(id,nombre,username.password);
       this.rut = rut;
         this.apellido = apellido;
