@@ -7,7 +7,7 @@ public class AdminDTO extends UserDTO {
 
   public AdminDTO(){
   }
-  public AdminDTO(String run,String apellido,String correo,String area){
+  public AdminDTO(ind id, String nombre, String username, String password,String run,String apellido,String correo,String area){
     super(id,nombre,username,password);
     this.run =run;
     this.apellido = apellido;
