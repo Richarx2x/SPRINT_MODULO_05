@@ -1,3 +1,4 @@
+package cl.grupo05.model.dto;
 public class ClteDTO extends UserDTO {
   private String rut;
   private String apellido;
