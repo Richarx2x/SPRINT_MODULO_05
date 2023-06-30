@@ -1,3 +1,4 @@
+package cl.grupo05.model.dto;
 public class CapacitacionDTO  {
 	private String nombre;
   private String detalle
