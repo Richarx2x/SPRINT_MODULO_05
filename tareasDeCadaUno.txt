@@ -1,0 +1,6 @@
+
+	- SIMON: jsp
+	- Aracily: dto
+	- Eduardo: dao + service
+	- Ricardo: Llenar base de datos + Controladores
+	- Mauricio: ¿Readme?
