@@ -38,10 +38,10 @@ public class ClteDTO extends UserDTO {
         this.apellido = apellido;
     }
    public String getCorreo() {
-        return rut;
+        return correo;
     }
     public void setCorreo(String correo) {
-        this.rut = rut;
+        this.correo = correo;
     }
     public String getTelefono() {
         return telefono;
