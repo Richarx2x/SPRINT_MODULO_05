@@ -1,3 +1,4 @@
+package cl.grupo05.model.dto;
 public class AdminDTO extends UserDTO {
   private String run;
   private String apellido;
