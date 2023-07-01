@@ -12,8 +12,9 @@ public class ClteDTO extends UserDTO {
 
   public ClteDTO (){
   }
-  public ClteDTO(String rut, String apellido,String correo,String telefono, String afp,String direccion, String comuna){
-    super(id,nombre,username.password);
+  public ClteDTO(int id, String nombre, String username,
+		  String password, String rut, String apellido,String correo,String telefono, String afp,String direccion, String comuna){
+    super(id,nombre,username,password);
       this.rut = rut;
         this.apellido = apellido;
         this.correo = correo;
@@ -38,15 +39,15 @@ public class ClteDTO extends UserDTO {
         this.apellido = apellido;
     }
    public String getCorreo() {
-        return rut;
+        return correo;
     }
     public void setCorreo(String correo) {
-        this.rut = rut;
+        this.correo = correo;
     }
     public String getTelefono() {
         return telefono;
     }
-    public void setTelefono(String Telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
     public String getAfp() {

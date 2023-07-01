@@ -1,7 +1,7 @@
 package cl.grupo05.model.dto;
 public class CapacitacionDTO  {
 	private String nombre;
-  private String detalle
+    private String detalle;
 	private String fecha;// use tipo string para este sprint ** cambiar tipo de dato en la BD
     private String hora;
     private String lugar;

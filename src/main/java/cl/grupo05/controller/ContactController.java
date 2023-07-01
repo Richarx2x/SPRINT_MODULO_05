@@ -7,19 +7,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/")
-public class IndexController extends HttpServlet {
+
+@WebServlet("/Contact")
+public class ContactController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public IndexController() {
+
+    public ContactController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		getServletContext().getRequestDispatcher("/views/Inicio.jsp").forward(request, response);
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		getServletContext().getRequestDispatcher("/views/Contacto.jsp").forward(request, response);
 	}
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub

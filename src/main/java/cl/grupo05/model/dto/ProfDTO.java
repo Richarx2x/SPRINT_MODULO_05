@@ -11,7 +11,8 @@ public class ProfDTO extends UserDTO {
        
     }
 
-    public ProfDTO(String run, String apellido,String correo, String telefono, String cargo) {
+    public ProfDTO(int id, String nombre, String username,
+  		  String password, String run, String apellido,String correo, String telefono, String cargo) {
         super(id,nombre, username, password);
         this.run = run;
         this.apellido = apellido;
@@ -54,4 +55,5 @@ public class ProfDTO extends UserDTO {
     public void setCargo(String cargo) {
         this.cargo =  cargo;
     }
+}
 
