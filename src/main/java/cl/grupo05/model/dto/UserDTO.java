@@ -9,6 +9,7 @@ public class UserDTO {
 	public UserDTO() {
 		
 	}
+	
 	public UserDTO(int id,String nombre,String username,String password) {
 		super();
 		this.id= id;

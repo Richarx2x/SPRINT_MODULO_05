@@ -11,4 +11,5 @@ public interface IUserDAO {
 	public  UserDTO read(int id);
 	public boolean update(UserDTO c);
 	public boolean delete(int id);
+
 }
