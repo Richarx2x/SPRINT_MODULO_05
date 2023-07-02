@@ -23,6 +23,7 @@ public class UserDAO implements IUserDAO {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
 	@Override
 	public UserDTO read(int id) {
 		UserDTO us= null;
