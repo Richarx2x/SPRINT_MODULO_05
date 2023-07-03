@@ -9,7 +9,6 @@ public class UserDTO {
 	public UserDTO() {
 		
 	}
-	
 	public UserDTO(int id,String nombre,String username,String password) {
 		super();
 		this.id= id;
@@ -42,5 +41,6 @@ public class UserDTO {
 	public void setPassword(String password) {
 		this.password =password ;
 	}
+	
 
 }

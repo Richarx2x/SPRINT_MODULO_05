@@ -293,4 +293,3 @@ de acuerdo con lo indicado en el punto anterior, acompañado por archivo de text
 Readme.txt, contextualizando el problema y planteamiento de la solución. La solución deberá
 ser gestionada a repositorio Github, a fin de que cada alumno vaya generando un repositorio
 documental.
-
