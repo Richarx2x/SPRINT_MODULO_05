@@ -12,6 +12,30 @@ import cl.grupo05.model.dto.UserDTO;
 
 public class UserDAO implements IUserDAO {
 
+	public UserDTO login(String username, String password) {
+		UserDTO us = null;
+		try {
+			Connection cnn = Conexion.getConexion();
+			Statement stm = cnn.createStatement();
+			String sql="select id,nombre,username, password from usuario where username="+username+" and password ="+password;
+			
+			ResultSet rs= stm.executeQuery(sql);
+			while(rs.next()) {
+				us= new UserDTO(rs.getInt("id"),
+						rs.getString("nombre"),
+						rs.getString("username"),
+						rs.getString("password"));
+				
+			}
+		}catch(SQLException e) {
+				System.out.println("Error, no se encuentra usuario");
+				e.printStackTrace();
+			
+			}
+		return us;
+		
+		}
+	
 	@Override
 	public boolean create(UserDTO c) {
 		// TODO Auto-generated method stub
