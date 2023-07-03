@@ -17,7 +17,7 @@
 </head>
 <body style="background-color: white; color: darkgreen;">
     <h1>Iniciar sesión</h1>
-    <form action="login.jsp" method="post">
+    <form action="loginProcess.jsp" method="post">
         <label for="usuario">Usuario:</label>
         <input type="text" name="usuario" required><br>
 

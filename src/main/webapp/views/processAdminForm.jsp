@@ -20,7 +20,7 @@
   <h1>Procesando Formulario de Administrativo</h1>
   
   <%
-    String id = request.getParameter("id");
+    int id = Integer.parseInt(request.getParameter("id"));
     String nombre = request.getParameter("nombre");
     String username = request.getParameter("username");
     String password = request.getParameter("password");
