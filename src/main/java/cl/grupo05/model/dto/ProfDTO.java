@@ -1,6 +1,8 @@
 package cl.grupo05.model.dto;
-public class ProfDTO extends UserDTO {
-    private String run;
+
+public class ProfDTO extends UserDTO{
+	
+	private String run;
     private String apellido;
    private String correo;
    private String telefono;
@@ -56,4 +58,3 @@ public class ProfDTO extends UserDTO {
         this.cargo =  cargo;
     }
 }
-

@@ -1,5 +1,6 @@
 package cl.grupo05.model.dto;
-public class CapacitacionDTO  {
+
+public class CapacitacionDTO {
 	private String nombre;
     private String detalle;
 	private String fecha;// use tipo string para este sprint ** cambiar tipo de dato en la BD
@@ -64,5 +65,4 @@ public String getNombre() {
 		this.cantidad = cantidad;
 	}
 	
-  
 }
