@@ -1,34 +1,30 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Iniciar sesión</title>
     <style>
-        .error-message {
-            color: rgb(0, 21, 255);
+        body {
+            background-color: white;
+            color: green;
+          }
+          
+          .success-message {
+            color: green;
             font-weight: bold;
-        }
-    </style>
-    <script>
-        function showError() {
-            var errorMessage = document.getElementById("error-message");
-            errorMessage.style.display = "block";
-        }
-    </script>
+          }
+        </style>
 </head>
-<body>
-    <h1>Login</h1>
-    <form action="Servlet Login" method="POST" onsubmit="showError()">
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Contrase�a:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="submit" value="Login">
+<body style="background-color: white; color: darkgreen;">
+    <h1>Iniciar sesión</h1>
+    <form action="login.jsp" method="post">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" required><br>
+
+        <input type="submit" value="Ingresar">
     </form>
-    <div id="error-message" class="error-message" style="display: none;">Usuario y Clave invalidos, volver a ingresar</div>
 </body>
 </html>
