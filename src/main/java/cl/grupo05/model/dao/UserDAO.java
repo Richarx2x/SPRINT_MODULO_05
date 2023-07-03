@@ -23,8 +23,8 @@ public class UserDAO implements IUserDAO {
 			while(rs.next()) {
 				us= new UserDTO(rs.getInt("id"),
 						rs.getString("nombre"),
-						rs.getString("username"),
-						rs.getString("password"));
+						rs.getString(username),
+						rs.getString(password));
 				
 			}
 		}catch(SQLException e) {
@@ -38,7 +38,7 @@ public class UserDAO implements IUserDAO {
 	
 	@Override
 	public boolean create(UserDTO c) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
