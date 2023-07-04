@@ -7,6 +7,11 @@ Bootcamp Awakelab: Tareas grupales + Sprint final módulo 05
 - Eduardo Torres
 - Simon Zelada
 
+------------------------
+Enlace repositorio remoto:
+https://github.com/Richarx2x/SPRINT_MODULO_05.git
+------------------------
+
 Este proyecto es un ejemplo de una aplicación web que utiliza servlets, DTO y DAO para interactuar con una base de datos SQL para atender los requerimientos que se señalan en el contexto.
 
 Archivos
