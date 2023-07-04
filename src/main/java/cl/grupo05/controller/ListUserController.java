@@ -40,11 +40,11 @@ public class ListUserController extends HttpServlet {
 		String param = request.getParameter("id");
 		// falta codigo para listar usuarios 
 		if (param == null) {
-			request.setAttribute("students", studentService.findAll());
+			request.setAttribute("login", usService.findAll());
 			getServletContext().getRequestDispatcher("/views/studentsList.jsp").forward(request, response);
 		} else {
 			int id = Integer.parseInt(param);
-			request.setAttribute("student", studentService.findOne(id));
+			request.setAttribute("login", usService.findOne(id));
 			getServletContext().getRequestDispatcher("/views/student.jsp").forward(request, response);
 		}
 		

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cl.grupo05.model.connection.Connection;
-
+import cl.grupo05.model.dao.interfaces.IProfDAO;
 import cl.grupo05.model.dto.ProfDTO;
 
 public class ProfDAO implements IProfDAO{

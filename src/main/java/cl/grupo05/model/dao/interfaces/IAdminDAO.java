@@ -1,4 +1,4 @@
-package cl.grupo05.model.dao;
+package cl.grupo05.model.dao.interfaces;
 
 import java.util.List;
 import cl.grupo05.model.dto.AdminDTO;

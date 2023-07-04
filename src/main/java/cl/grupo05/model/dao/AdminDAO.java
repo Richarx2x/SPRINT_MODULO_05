@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import cl.grupo05.model.connection.Connection;
+import cl.grupo05.model.dao.interfaces.IAdminDAO;
 import cl.grupo05.model.dto.AdminDTO;
 
 

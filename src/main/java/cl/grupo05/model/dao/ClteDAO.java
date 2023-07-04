@@ -2,6 +2,7 @@ package cl.grupo05.model.dao;
 
 import java.util.List;
 
+import cl.grupo05.model.dao.interfaces.IClteDAO;
 import cl.grupo05.model.dto.ClteDTO;
 
 public class ClteDAO implements IClteDAO{
