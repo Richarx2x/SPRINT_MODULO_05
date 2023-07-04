@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/Contact")
+@WebServlet("/contact")
 public class ContactController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -22,7 +22,7 @@ public class ContactController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
-		getServletContext().getRequestDispatcher("/views/Contacto.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/views/contacto.jsp").forward(request, response);
 	}
 
 

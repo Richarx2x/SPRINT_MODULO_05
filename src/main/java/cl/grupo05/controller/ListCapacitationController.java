@@ -19,7 +19,7 @@ public class ListCapacitationController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		getServletContext().getRequestDispatcher("/views/ListarCapacitacion.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/views/Capacitacion.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
