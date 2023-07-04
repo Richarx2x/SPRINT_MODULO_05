@@ -13,8 +13,7 @@ import cl.grupo05.model.service.UserService;
 
 @WebServlet("/listaUsuario")
 public class ListUserController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
+	private static final long serialVersionUID = 1L; 
 	private UserService usService = new UserService(); 
     public ListUserController() {
         super();
@@ -37,16 +36,9 @@ public class ListUserController extends HttpServlet {
 		} 
 		
 		
-		String param = request.getParameter("id");
-		// falta codigo para listar usuarios 
-		if (param == null) {
-			request.setAttribute("login", usService.findAll());
-			getServletContext().getRequestDispatcher("/views/studentsList.jsp").forward(request, response);
-		} else {
-			int id = Integer.parseInt(param);
-			request.setAttribute("login", usService.findOne(id));
-			getServletContext().getRequestDispatcher("/views/student.jsp").forward(request, response);
-		}
+		request.setAttribute("usuarios", usService.findAll());
+		
+		getServletContext().getRequestDispatcher("/views/listadosUsuarios.jsp").forward(request, response);
 		
 		
 	}

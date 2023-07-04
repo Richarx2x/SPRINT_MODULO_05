@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulario de Registro</h1>
-    <form action="procesarRegistro.jsp" method="post">
+    <form action="procesarregistro.jsp" method="post">
         <!-- Aquí se muestran los campos del formulario -->
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required><br>
