@@ -44,8 +44,6 @@ ProfDAO: Proporciona métodos para acceder a los datos de los profesionales en l
 Conexión con la Base de Datos SQL
 Este proyecto se conecta a una base de datos SQL utilizando JDBC (Java Database Connectivity). La configuración de la conexión se realiza en un archivo de configuración, que contiene la URL de la base de datos, el nombre de usuario y la contraseña. La conexión se establece en los DAO correspondientes, donde se utilizan los métodos de JDBC para ejecutar consultas y manipular los datos en la base de datos.
 
-Recuerda configurar correctamente la URL de la base de datos en los archivos de configuración y asegurarte de que la base de datos esté configurada y accesible.
-
 
 CONTEXTO
 
