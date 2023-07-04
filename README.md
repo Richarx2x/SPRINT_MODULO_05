@@ -7,6 +7,45 @@ Bootcamp Awakelab: Tareas grupales + Sprint final módulo 05
 - Eduardo Torres
 - Simon Zelada
 
+Este proyecto es un ejemplo de una aplicación web que utiliza servlets, DTO y DAO para interactuar con una base de datos SQL para atender los requerimientos que se señalan en el contexto.
+
+Archivos
+El proyecto contiene los siguientes archivos:
+
+login.jsp: Archivo JSP que muestra el formulario de inicio de sesión y valida las credenciales del usuario.
+index.jsp: Archivo JSP principal de la aplicación. Muestra un listado de opciones y redirige a diferentes páginas según la selección del usuario.
+usuario.jsp: Archivo JSP que permite ingresar un usuario y contraseña y acceder al index.jsp.
+listados.jsp: Archivo JSP que muestra un listado de registros según la opción seleccionada por el usuario.
+modificacion.jsp: Archivo JSP que permite modificar registros en la base de datos.
+contacto.jsp: Archivo JSP que muestra un formulario de contacto con campos como nombre, rut, correo electrónico, teléfono y mensaje.
+procesar-contacto.jsp: Archivo JSP que procesa los datos enviados desde el formulario de contacto y realiza las acciones necesarias.
+styles.css: Archivo CSS que define los estilos visuales para los archivos JSP.
+Servlets
+En este proyecto, los servlets se utilizan para manejar las diferentes acciones y lógica de la aplicación. Algunos servlets importantes incluyen:
+
+LoginServlet: Se encarga de validar las credenciales de inicio de sesión y redirigir al usuario a la página principal (index.jsp) si las credenciales son correctas.
+ListadosServlet: Recibe la opción seleccionada por el usuario desde index.jsp y muestra los registros correspondientes según esa opción.
+ModificacionServlet: Maneja las solicitudes de modificación de registros en la base de datos y actualiza los datos correspondientes.
+ContactoServlet: Procesa los datos enviados desde el formulario de contacto en contacto.jsp y realiza las acciones necesarias, como enviar un correo electrónico o almacenar los datos en la base de datos.
+DTO y DAO
+
+Los DTO (Data Transfer Objects) se utilizan para representar los datos de los objetos en la aplicación. Algunos DTO importantes en este proyecto son:
+
+UserDTO: Representa los datos de un usuario, incluyendo el ID, nombre de usuario y contraseña.
+ClteDTO: Representa los datos de un cliente, incluyendo el nombre, apellido, correo electrónico, teléfono, etc.
+ProfDTO: Representa los datos de un profesional, incluyendo el nombre, apellido, correo electrónico, teléfono, cargo, etc.
+Los DAO (Data Access Objects) se utilizan para acceder y manipular los datos en la base de datos. Proporcionan métodos para realizar operaciones como la inserción, actualización y consulta de registros. Algunos DAO importantes en este proyecto son:
+
+UserDAO: Proporciona métodos para acceder a los datos de los usuarios en la base de datos.
+ClteDAO: Proporciona métodos para acceder a los datos de los clientes en la base de datos.
+ProfDAO: Proporciona métodos para acceder a los datos de los profesionales en la base de datos.
+
+
+Conexión con la Base de Datos SQL
+Este proyecto se conecta a una base de datos SQL utilizando JDBC (Java Database Connectivity). La configuración de la conexión se realiza en un archivo de configuración, que contiene la URL de la base de datos, el nombre de usuario y la contraseña. La conexión se establece en los DAO correspondientes, donde se utilizan los métodos de JDBC para ejecutar consultas y manipular los datos en la base de datos.
+
+Recuerda configurar correctamente la URL de la base de datos en los archivos de configuración y asegurarte de que la base de datos esté configurada y accesible.
+
 
 CONTEXTO
 
