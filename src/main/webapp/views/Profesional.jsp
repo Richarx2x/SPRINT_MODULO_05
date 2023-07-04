@@ -4,17 +4,7 @@
 <html>
 <head>
     <title>Formulario de Profesional</title>
-    <style>
-    body {
-        background-color: white;
-        color: green;
-      }
-      
-      .success-message {
-        color: green;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1>Formulario de Profesional</h1>
@@ -46,5 +36,8 @@
 
         <input type="submit" value="Guardar">
     </form>
+    <div class="footer">
+        &copy; 2023 Sistema de Capacitación 2.0
+    </div>
 </body>
 </html>

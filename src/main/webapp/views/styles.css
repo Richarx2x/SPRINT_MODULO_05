@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    background-color: white;
+    color: darkgreen;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la selección múltiple */
+  .select-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid darkgreen;
+  }
+  
+  /* Estilos para el botón volver */
+  .volver-button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .volver-button:hover {
+    background-color: #006400;
+  }
+  
+  /* Estilos para el pie de página */
+  .footer {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para la página de inicio (index.jsp) */
+  .index-container {
+    text-align: center;
+  }
+  
+  .index-link {
+    display: inline-block;
+    margin: 10px;
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .index-link:hover {
+    color: #006400;
+  }
+  

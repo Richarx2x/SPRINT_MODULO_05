@@ -3,24 +3,7 @@
 <html>
 <head>
   <title>Creacion Personal Administrativo</title>
-  <style>
-    body {
-      background-color: white;
-      color: green;
-    }
-    
-    .error-message {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 10px;
-      background-color: rgb(5, 126, 25);
-      color: white;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script>
     function showErrorPopup(message) {
       var errorPopup = document.getElementById("error-popup");
@@ -73,5 +56,8 @@
       out.println("<script>showErrorPopup('" + errorMessage + "');</script>");
     }
   %>
+  <div class="footer">
+    &copy; 2023 Sistema de Capacitación 2.0
+</div>
 </body>
 </html>
