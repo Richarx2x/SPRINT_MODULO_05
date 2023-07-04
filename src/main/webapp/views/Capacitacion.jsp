@@ -3,24 +3,7 @@
 <html>
 <head>
   <title>Capacitacion </title>
-  <style>
-    body {
-      background-color: white;
-      color: green;
-    }
-    
-    .error-message {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 10px;
-      background-color: rgba(0, 255, 42, 0.172);
-      color: white;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script>
     function showErrorPopup(message) {
       var errorPopup = document.getElementById("error-popup");

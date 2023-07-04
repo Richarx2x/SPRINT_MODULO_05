@@ -4,17 +4,7 @@
 <html>
 <head>
     <title>Sistema de Capacitacion 2.0 - Listados</title>
-    <style>
-        body {
-            background-color: white;
-            color: green;
-          }
-          
-          .success-message {
-            color: green;
-            font-weight: bold;
-          }
-        </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1 style="color: darkgreen; font-family: verdana, arial;">Sistema de Capacitacion 2.0 - Listados</h1>

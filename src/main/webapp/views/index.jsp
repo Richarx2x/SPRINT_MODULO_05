@@ -3,17 +3,7 @@
 <html>
 <head>
     <title>Sistema de Capacitacion 2.0</title>
-    <style>
-        body {
-            background-color: white;
-            color: green;
-          }
-          
-          .success-message {
-            color: green;
-            font-weight: bold;
-          }
-        </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1 style="color: darkgreen; font-family: verdana, arial;">Sistema de Capacitacion 2.0</h1>
@@ -22,7 +12,11 @@
         <li><a href="usuario.jsp" style="color: darkgreen; font-family: verdana, arial;">Ingresar Usuario</a></li>
         <li><a href="listados.jsp" style="color: darkgreen; font-family: verdana, arial;">Mostrar listados</a></li>
         <li><a href="modificacion.jsp" style="color: darkgreen; font-family: verdana, arial;">Modificar Registros</a></li>
+        <li><a href="contacto.jsp" style="color: darkgreen; font-family: verdana, arial;">Contactar compañia</a></li>
         <li><a href="login.jsp" style="color: darkgreen; font-family: verdana, arial;">Salir</a></li>
     </ul>
+    <div class="footer">
+        &copy; 2023 Sistema de Capacitación 2.0
+    </div>
 </body>
 </html>
