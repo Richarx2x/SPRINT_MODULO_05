@@ -36,9 +36,9 @@ public class LoginController extends HttpServlet {
 		if(user!=null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("login",true);
-			getServletContext().getRequestDispatcher("/crearUsuario").forward(request, response);
+			getServletContext().getRequestDispatcher("/inicio").forward(request, response);
 		}else {
-						getServletContext().getRequestDispatcher("views/login.jsp").forward(request, response);
+			getServletContext().getRequestDispatcher("views/login.jsp").forward(request, response);
 		}
 		
 		

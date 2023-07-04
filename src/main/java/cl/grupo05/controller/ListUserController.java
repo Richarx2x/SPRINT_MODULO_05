@@ -11,12 +11,12 @@ import javax.servlet.http.HttpSession;
 import cl.grupo05.model.service.UserService;
 
 
-@WebServlet("/students")
-public class StudentController extends HttpServlet {
+@WebServlet("/listaUsuario")
+public class ListUserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-
-    public StudentController() {
+	private UserService usService = new UserService(); 
+    public ListUserController() {
         super();
      
     }
@@ -26,20 +26,19 @@ public class StudentController extends HttpServlet {
 	
 		HttpSession session = request.getSession();
 		
-		if (session.getAttribute("isLogged") == null) {
+		if (session.getAttribute("login") == null) {
 			getServletContext().getRequestDispatcher("/login").forward(request, response);
 		}
 		
-		boolean isLogged = (boolean)session.getAttribute("isLogged");
+		boolean logg = (boolean)session.getAttribute("login");
 		
-		if (!isLogged) {
+		if (!logg) {
 			getServletContext().getRequestDispatcher("/login").forward(request, response);
 		} 
 		
-		StudentService studentService = new StudentService();
 		
 		String param = request.getParameter("id");
-		
+		// falta codigo para listar usuarios 
 		if (param == null) {
 			request.setAttribute("students", studentService.findAll());
 			getServletContext().getRequestDispatcher("/views/studentsList.jsp").forward(request, response);
