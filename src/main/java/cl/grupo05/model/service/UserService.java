@@ -27,5 +27,8 @@ public class UserService {
 	public void delete(int id) {
 		usDAO.delete(id);
 	}
+	public UserDTO login(String username,String password) {
+		return usDAO.login(username, password);
+	}
 	
 }
